@@ -5,5 +5,15 @@
     "Packages": [
         "./…"
     ],
-    "Deps": []
+    "Deps": [
+	{
+		"ImportPath": "github.com/dgryski/go-topk"		
+	},
+	{
+		"ImportPath": "github.com/golang"
+	},
+	{
+		"ImportPath": "github.com/googleapis/gax-go"
+	}    
+    ]
 }
