@@ -3,14 +3,14 @@ FROM golang:1.8.0
 EXPOSE 10080
 EXPOSE 10443
 
-ADD . /go/src/github.com/jmhodges/howsmyssl
+ADD . /go/src/github.com/sanjayodesk/howsmyssl
 
-RUN go install github.com/jmhodges/howsmyssl
+RUN go install github.com/sanjayodesk/howsmyssl
 
 # Provided by kubernetes secrets or some such
 VOLUME "/secrets"
 
-RUN chown -R www-data /go/src/github.com/jmhodges/howsmyssl
+RUN chown -R www-data /go/src/github.com/sanjayodesk/howsmyssl
 
 USER www-data
 
@@ -18,8 +18,8 @@ CMD ["/bin/bash", "-c", "howsmyssl \
     -httpsAddr=:10443 \
     -httpAddr=:10080 \
     -adminAddr=:4567 \
-    -templateDir=/go/src/github.com/jmhodges/howsmyssl/templates \
-    -staticDir=/go/src/github.com/jmhodges/howsmyssl/static \
+    -templateDir=/go/src/github.com/sanjayodesk/howsmyssl/templates \
+    -staticDir=/go/src/github.com/sanjayodesk/howsmyssl/static \
     -vhost=www.howsmyssl.com \
     -acmeRedirect=$ACME_REDIRECT_URL \
     -originsConf=/etc/howsmyssl-origins/origins.json \
