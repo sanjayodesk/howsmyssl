@@ -8,7 +8,7 @@ import (
 	"net"
 	"sync/atomic"
 
-	tls "github.com/jmhodges/howsmyssl/tls18"
+	tls "github.com/sanjayodesk/howsmyssl/tls18"
 )
 
 var (
