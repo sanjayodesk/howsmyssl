@@ -1,0 +1,7 @@
+{
+    “ImportPath”: “all_suites”,    
+    “Packages”: [
+        “./…”
+    ],
+    “Deps”: []
+}
