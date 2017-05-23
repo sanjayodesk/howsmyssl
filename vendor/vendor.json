@@ -1,6 +1,0 @@
-{
-	"comment": "",
-	"ignore": "test",
-	"package": ["all_suites"],
-	"rootPath": "/github.com/sanjayodesk/howsmyssl/"
-}
