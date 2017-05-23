@@ -1,5 +1,7 @@
 {
-    "ImportPath": "all_suites",    
+    "ImportPath": "github.com/sanjayodesk/howsmyssl",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",    
     "Packages": [
         "./…"
     ],
