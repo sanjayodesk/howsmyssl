@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"cloud.google.com/go/logging"
-	"github.com/jmhodges/howsmyssl/gzip"
-	tls "github.com/jmhodges/howsmyssl/tls18"
+	"github.com/sanjayodesk/howsmyssl/gzip"
+	tls "github.com/sanjayodesk/howsmyssl/tls18"
 	"golang.org/x/net/context"
 	"google.golang.org/api/option"
 )
