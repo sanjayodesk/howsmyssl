@@ -15,6 +15,9 @@ RUN chown -R www-data /go/src/github.com/sanjayodesk/howsmyssl
 USER www-data
 
 CMD ["/bin/bash", "-c", "howsmyssl \   
+    -httpsAddr=:10443 \
+    -httpAddr=:10080 \
+    -adminAddr=:4567 \
     -templateDir=/go/src/github.com/sanjayodesk/howsmyssl/templates \
     -staticDir=/go/src/github.com/sanjayodesk/howsmyssl/static \
     -vhost=howsmyssl.herokuapp.com \
