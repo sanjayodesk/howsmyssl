@@ -20,7 +20,7 @@ CMD ["/bin/bash", "-c", "howsmyssl \
     -adminAddr=:4567 \
     -templateDir=/go/src/github.com/sanjayodesk/howsmyssl/templates \
     -staticDir=/go/src/github.com/sanjayodesk/howsmyssl/static \
-    -vhost=www.howsmyssl.com \
+    -vhost=howsmyssl.herokuapp.com \
     -acmeRedirect=$ACME_REDIRECT_URL \
     -originsConf=/etc/howsmyssl-origins/origins.json \
     -googAcctConf=/secrets/howsmyssl-logging-svc-account/howsmyssl-logging.json \
