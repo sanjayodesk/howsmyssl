@@ -65,7 +65,7 @@ fi
 
 docker login -u $DOCKER_USER -p $DOCKER_PASS || die "unable to login"
 
-REPO=jmhodges/howsmyssl
+REPO=sanjayodesk/howsmyssl
 
 SHA=$(git rev-parse --short HEAD)
 
