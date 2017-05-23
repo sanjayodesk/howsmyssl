@@ -1,10 +1,7 @@
 {
     "ImportPath": "github.com/sanjayodesk/howsmyssl",
 	"GoVersion": "go1.7",
-	"GodepVersion": "v74",    
-    "Packages": [
-        "./…"
-    ],
+	"GodepVersion": "v74",  
     "Deps": [
 	{
 		"ImportPath": "github.com/dgryski/go-topk"		
